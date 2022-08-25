@@ -78,7 +78,7 @@ function start_browser() {
             cmd: "request.get",
             url: target,
             proxy: {
-                "url": `http://${api_proxy}/`,
+                "url": `http://${api.proxyscrape.com/?request=displayproxies&proxytype=http&country=all&anonymity=all&ssl=yes}/`,
             },
             maxTimeout: conn_timeout,
         }),
